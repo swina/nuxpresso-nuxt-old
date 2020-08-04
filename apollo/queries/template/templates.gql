@@ -1,0 +1,43 @@
+query Templates {
+  templates {
+    id
+    name
+    class
+    fields {
+      name
+      class
+      shortcode 
+      textbox
+      widget {
+          id
+      }
+      menu {
+        id
+      }
+    }
+    fields_col_2 {
+      name
+      class
+      shortcode
+      textbox
+      widget {
+          id
+      }
+      menu {
+        id
+      }
+    }
+    fields_col_3 {
+      name
+      class
+      shortcode
+      textbox
+      widget {
+          id
+      }
+      menu {
+        id
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+query Widgets {
+  widgets  {
+    id
+    component {
+      __typename
+    }
+  }
+}

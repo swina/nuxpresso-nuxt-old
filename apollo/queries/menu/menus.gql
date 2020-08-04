@@ -1,0 +1,46 @@
+query Menus {
+  menus {
+    id
+    name
+    type
+    orientation
+    css
+    mobile
+    background_color {
+      color
+      density
+      css
+    }
+    text_color {
+      color
+      density
+      css
+    }
+    items {
+        order
+        name
+        article {
+            title
+            slug
+        }
+        category {
+            name
+            slug
+        }
+        link_url
+        submenu {
+          id
+          items {
+            name 
+            article {
+              slug
+            }
+            category {
+              slug
+            }
+            link_url
+          }
+        }
+    }
+  }
+}

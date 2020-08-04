@@ -1,0 +1,460 @@
+@import "./base.css";
+@tailwind components;
+
+
+
+h1 {
+    @apply text-5xl my-4 leading-none;
+}
+
+h2 {
+    @apply text-4xl my-4 leading-none;
+}
+
+h3 {
+    @apply text-3xl my-4;
+}
+
+h4 {
+    @apply text-2xl my-4;
+}
+
+h5 {
+    @apply text-2xl my-4;
+}
+
+ul {
+    @apply ml-10 my-2;
+}
+ul > li {
+    @apply list-disc;
+}
+
+p {
+    @apply leading-8;
+}
+
+button {
+    @apply bg-blue-600 text-white px-4 py-2 border border-transparent rounded outline-none;
+}
+
+button:hover {
+    @apply bg-white text-black border-gray-300;
+}
+
+form {
+    @apply p-2 border rounded;
+}
+
+input , textarea , select {
+    @apply p-2 border rounded;
+}
+
+input:focus {
+    @apply shadow;
+}
+
+input[type="range"] {
+    @apply p-0 border-0 rounded-none;
+}
+input[type="range"]:focus {
+    @apply shadow-none;
+}
+
+
+pre {
+    @apply w-full overflow-auto bg-gray-200 text-xs p-2 my-2 border border-gray-400;
+}
+
+.nuxpresso-flex-row {
+    @apply flex flex-col flex-wrap w-full p-8 justify-center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: minmax(2rem, 10rem);
+    gap: 1px 1px;
+    grid-template-areas: ". .";
+  }
+
+.nuxpresso-col-auto {
+    @apply w-auto;
+}
+.col-narrow {
+    @apply w-full
+}
+.col-narrow-md {
+    @qpply w-1/3; 
+}
+.col-narrow-lg {
+    @apply w-1/4;
+}
+.col-narrow-xl {
+    @apply w-1/5;
+}
+
+.nuxpresso-col {
+    @apply w-full p-4 text-center;
+    transition: .5s all;
+}
+
+@media only screen and (min-width:600px){
+    .nuxpresso-flex-row {
+        @apply flex-row;
+    }
+    
+    .nuxpresso-col {
+        @apply flex-row w-1/2 p-10;
+    }
+
+    .nuxpresso-col:hover {
+       transform: scale(1.1);
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .nuxpresso-col {
+        @apply flex-row w-1/3 p-4;
+    }
+
+}
+
+@media only screen and (min-width:1200px){
+    .nuxpresso-col {
+        @apply flex-row w-1/4 p-4;
+    }
+}
+
+.nuxpresso-logo-heading {
+    @apply text-xs text-center;
+}
+
+.nuxpresso-social-icon {
+    @apply bg-gray-100 rounded;
+    fill: #333;
+}
+
+.nuxpresso-social-icon:hover {
+    @apply bg-gray-600;
+    fill: white;
+
+}
+
+.nuxpresso-widget-price-table-component {
+    @apply bg-white;
+}
+
+.nuxpresso-widget-price-table > .nuxpresso-box-price {
+    @apply text-red-600;
+}
+
+.nuxpresso-widget-nuxpresso-team > img {
+    @apply rounded-full;
+}
+
+
+.nuxpresso-box-multiline {
+    @apply text-sm;
+}
+
+.nuxpresso-box-button {
+    @apply mt-4;
+}
+
+.nuxpresso-box-price {
+    @apply border-b border-t;
+}
+
+
+
+.nuxpresso-logo {
+    @apply bg-white p-2;
+    border-radius:5rem;
+}
+
+.nuxpresso-readmore {
+    @apply flex flex-row items-center text-xs;
+}
+
+.nuxpresso-tag {
+    @apply bg-gray-300 text-xs p-1 mr-2 rounded;
+}
+
+.nuxpresso-tag-tags:hover , .nuxpresso-tag-related:hover {
+    @apply bg-gray-900 text-white;
+}
+.nuxpresso-tag-categories {
+    @apply bg-transparent font-bold underline;
+}
+
+.nuxpresso-boxed {
+    @apply px-1;
+}
+
+@media only screen and (min-width:800px){
+    .nuxpresso-boxed {
+        @apply px-2;
+    }
+}
+
+
+img.nuxpresso-boxed {
+    @apply m-auto p-0;
+}
+
+
+article.article > h1 , article.article > div > h1 {
+    @apply text-indigo-500;
+}
+
+
+.nuxpresso-article-content {
+    @apply w-full;
+}
+
+.nuxpresso-article-image {
+    @apply m-auto;
+}
+
+
+
+
+a.nav-primary-item:hover {
+    @apply border-white;
+}
+
+.material-icons {
+    @apply text-blue-400;
+}
+
+.nuxpresso-widget-wrapper {
+    @apply w-full;
+}
+
+
+.nuxpresso-widget-title {
+    @apply text-center;
+}
+
+.nuxpresso-component-features-wrapper {
+    @apply flex flex-col;
+}
+
+.nuxpresso-component-features {
+    @apply flex justify-between p-10;
+}
+
+.nuxpresso-widget-nuxpresso-team-component  > img {
+    @apply rounded-full w-full h-auto;
+}
+
+.nuxpresso-component-features > div {
+    @apply flex flex-col w-full shadow p-4 text-center;
+}
+
+@media only screen and (min-width:800px){
+    .nuxpresso-component-features-wrapper {
+        @apply flex-row flex-grow flex-wrap justify-center;
+    }
+    .nuxpresso-component-features {
+        @apply w-1/3 p-4;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .nuxpresso-component-features {
+        @apply w-1/4 p-4;
+    }
+}
+
+.nuxpresso-component-cta-wrapper {
+    @apply flex flex-col w-full;
+}
+
+.nuxpresso-component-cta {
+    @apply flex flex-col w-full;
+}
+
+.nuxpresso-component-cta > div {
+    @apply flex flex-col w-full items-center justify-between;
+}
+
+@media only screen and (min-width:800px){
+    .nuxpresso-component-cta > div {
+        @apply flex-row;
+    }
+}
+
+
+.nuxpresso-widget-cta_home-component {
+    @apply bg-blue-400 text-white shadow p-10 my-8 ;
+}
+
+
+.nuxpresso-template-homepage > div > div  > div > .nuxpresso-article-content > p {
+    @apply mb-12;
+}
+
+.nuxpresso-slider {
+    @apply relative;
+}
+
+.nuxpresso-slider-overlay {
+    @apply absolute bg-black bg-opacity-75 rounded-lg shadow-lg;
+}
+
+.nuxpresso-slider-overlay > h2 {
+    @apply tracking-tighter font-bold text-blue-300;
+}
+
+.nuxpresso-slider-overlay > h3 {
+    @apply tracking-tighter text-xl text-white;
+}
+
+.nuxpresso-slider-overlay > p {
+    @apply text-gray-200;
+}
+
+
+.nuxpresso-slider > .nuxpresso-cta {
+    @apply absolute w-4/5 bg-black bg-opacity-75 rounded-lg shadow-lg;
+}
+
+.nuxpresso-slider > .nuxpresso-cta > h2 {
+    @apply tracking-tighter font-bold text-blue-300;
+}
+
+.nuxpresso-slider > .nuxpresso-cta > h3 {
+    @apply text-xl tracking-tighter text-white;
+}
+
+
+@media only screen and (min-width:800px){
+    .nuxpresso-slider > .nuxpresso-cta {
+        @apply w-3/4;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .nuxpresso-slider > .nuxpresso-cta {
+        @apply w-4/5;
+    }
+}
+
+.nuxpresso-component-button-wrapper {
+    @apply p-8;
+}
+
+
+
+
+.nuxpresso-component-price-table-item-wrapper {
+     @apply flex flex-col flex-wrap w-full text-center;
+}
+
+.nuxpresso-commponent-price-table-item {
+    @apply p-4;
+}
+
+
+.nuxpresso-component-price-table-item-container {
+    @apply p-4;
+}
+
+.nuxpresso-component-price-table-item-row {
+    @apply flex flex-col shadow;
+    transition: .5s all;
+}
+
+@media only screen and (min-width:600px){
+    .nuxpresso-component-price-table-item-wrapper {
+        @apply flex-row;
+    }
+    .nuxpresso-component-price-table-item-container {
+        @apply p-16;
+    }
+    .nuxpresso-component-price-table-item {
+        @apply w-1/2;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .nuxpresso-component-price-table-item {
+        @apply w-1/4;
+    }
+    .nuxpresso-component-price-table-item-container {
+        @apply p-4;
+    }
+}
+
+.nuxpresso-component-price-table-item-row:hover {
+    transform:scale(1.2);
+}
+
+.nuxpresso-component-price-table-item-row > .item-title {
+    @apply text-sm;
+}
+
+.nuxpresso-component-price-table-item-row > .item-price {
+    @apply text-3xl text-blue-700 font-bold border-b mb-8;
+}
+
+.nuxpresso-component-price-table-item-row > .item-text {
+    @apply text-sm;
+}
+
+.nuxpresso-component-price-table-item-row > a > .item-button {
+    @apply mt-8 mb-4 text-xs px-2 py-1;
+}
+
+/* animations */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+.slideleft-enter-active {
+    transition: transform .8s ease-in-out;
+ }
+ 
+ .slideleft-leave-active {
+    transition: transform .8s ease-in-out;
+ }
+ 
+ .slideleft-enter-to, .slideleft-leave {
+    transform: translate(0%, 0);
+    overflow: hidden;
+ }
+ 
+ .slideleft-enter, .slideleft-leave-to {
+    transform: translate(-100%, 0);
+    margin-right: 0;
+ }
+
+/*----------------------------*/
+
+/*---------------------------*/
+
+.slideright-enter-active {
+   transition: transform .8s ease-in-out;
+}
+
+.slideright-leave-active {
+   transition: transform .8s ease-in-out;
+}
+
+.slideright-enter-to, .slideright-leave {
+   transform: translate(0%, 0);
+   overflow: hidden;
+}
+
+.slideright-enter, .slideright-leave-to {
+   transform: translate(100%, 0);
+   margin-right: 0;
+}
+
+
+@tailwind utilities;

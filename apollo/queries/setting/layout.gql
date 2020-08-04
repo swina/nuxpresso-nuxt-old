@@ -1,0 +1,46 @@
+query Layout {
+  layout {
+    content_layout
+    sidebar
+    header_columns {
+      column {
+        width
+        class
+      }
+    }
+    footer_columns {
+      column {
+        width
+        class
+      }
+    }
+    primary {
+      color
+      density
+    }
+    background {
+      color
+      density
+    }
+    header {
+      color
+      density
+    }
+    footer {
+      color
+      density
+    }
+    heading {
+      color
+      density
+    }
+    link {
+      color
+      density
+    }
+    menu {
+      color
+      density
+    }
+  }
+}

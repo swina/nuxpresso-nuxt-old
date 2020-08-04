@@ -1,0 +1,70 @@
+@tailwind base;
+
+.clip-path-angle-left {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 64%);
+    min-height:11rem;
+    height:11rem;
+}
+
+.clip-path-angle-right {
+    clip-path: polygon(0 0,100% 0,100% 64%,0 100%);
+    min-height:11rem;
+    height:11rem;
+}
+
+.clip-path-tag-down {
+    clip-path: polygon(50% 0,100% 0,100% 100%,51% 84%,0 100%,0 0);
+    min-height:11rem;
+    height:11rem;
+}
+
+.clip-path-circle {
+    clip-path: circle(98.6% at 51% 0);
+    min-height:11rem;
+    height:11rem;
+}
+
+
+
+.nuxpresso-color-primary { 
+    @apply bg-transparent text-gray-600;
+   }
+   .nuxpresso-color-primary:hover { 
+    @apply text-black;
+   }
+    .nuxpresso-color-background { 
+    @apply bg-white text-black;
+   }
+   .nuxpresso-color-background:hover { 
+    @apply text-black;
+   }
+    .nuxpresso-color-header { 
+    @apply bg-blue-600 text-black;
+   }
+   .nuxpresso-color-header:hover { 
+    @apply text-black;
+   }
+    .nuxpresso-color-footer { 
+    @apply bg-teal-700 text-black;
+   }
+   .nuxpresso-color-footer:hover { 
+    @apply text-black;
+   }
+    .nuxpresso-color-link { 
+    @apply bg-teal-700 text-black;
+   }
+   .nuxpresso-color-link:hover { 
+    @apply text-black;
+   }
+    .nuxpresso-color-menu > span > a { 
+    @apply bg-transparent text-white;
+   }
+   .nuxpresso-color-menu > span > a:hover { 
+    @apply text-blue-200;
+   }
+   .nuxpresso-color-heading  { 
+    @apply bg-transparent text-blue-500;
+   }
+   .nuxpresso-color-heading:hover { 
+    @apply text-blue-700;
+   }

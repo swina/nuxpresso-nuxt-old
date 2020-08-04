@@ -1,0 +1,61 @@
+query Articles {
+  articles ( where :{ homepage: true }) {
+    title
+    content
+    excerpt
+    homepage
+    image {
+      url
+    }
+    image_title
+    parent {
+      title
+      slug
+    }
+    SEO {
+      title
+      description
+    }
+    template {
+      id
+      name
+      class
+      fields {
+        name
+        class
+        shortcode 
+        textbox
+        widget {
+            id
+        }
+        menu {
+          id
+        }
+      }
+      fields_col_2 {
+        name
+        class
+        shortcode
+        textbox
+        widget {
+            id
+        }
+        menu {
+          id
+        }
+      }
+      fields_col_3 {
+        name
+        class
+        shortcode
+        textbox
+        widget {
+            id
+        }
+        menu {
+          id
+        }
+      }
+    }
+  }
+}

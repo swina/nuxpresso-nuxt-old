@@ -1,0 +1,28 @@
+query Articles ($slug:String) {
+  articles ( where: { categories : { slug:$slug } } ) {
+    id
+    slug
+    title
+    content
+    tags
+      categories {
+        name
+        SEO {
+          title
+          description
+        }
+      }
+    parent {
+      slug
+      title
+    }
+    image {
+      url
+    }
+    image_title
+    user {
+      firstname
+      lastname
+    }
+  }
+}

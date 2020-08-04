@@ -1,0 +1,78 @@
+query Settings {
+  setting {
+    site_name
+    site_title
+    show_title
+    breadcrumb
+    darkmode
+    autoimage
+    authentication
+    articles_limit
+    articles_loop_mode
+    current_theme {
+      id
+      theme {
+        id
+      }
+    }
+    logo_img {
+      url
+      caption
+      alternativeText
+    }
+    email
+    github
+    twitter
+    footer
+    darkmode_settings {
+      ...on ComponentThemesDarkMode {
+        primary_fg {
+          color
+          density
+          css
+        }
+        main_bg {
+          color
+          density
+          css
+        }
+        header_fg {
+          color
+          density
+          css
+        }
+        header_bg {
+          color
+          density 
+          image {
+            url
+          }
+          css
+        }
+        footer_fg {
+          color
+          density 
+          css
+        }
+        footer_bg {
+          color
+          density 
+          image {
+            url
+          }
+          css
+        }
+        link_fg {
+          color
+          density 
+          css
+        }
+        menu_fg {
+          color
+          density 
+          css
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+query Articles {
+  articles {
+    slug
+    title
+    excerpt
+    content
+    homepage
+    random_image
+    tags
+    image { 
+        name 
+        url
+    }
+    gallery {
+        name
+        url
+    }
+    image_title
+    updated_at
+    SEO {
+        description
+        title
+    }
+    categories {
+        name
+        slug
+    }
+    parent {
+      slug
+      title
+    }
+    template {
+      id
+      name
+    }
+  } 
+}
